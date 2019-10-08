@@ -1,0 +1,16 @@
+<p>calculatrice-component works!</p>
+
+<input type="text" [(ngModel)] = a>
+
+<input type="text" [(ngModel)] = b>
+
+<button (click)="addition(a, b)">+</button>
+<button (click)="sous(a, b)">-</button>
+<button (click)="division(a, b)">/</button>
+<button (click)="multiplicate(a, b)">*</button>
+
+<div>{{result}}</div>
+
+<app-display-component [display]="result" [btnClick]="btnClicked"></app-display-component>
+<app-keyboard-component (btnClick)="changeColor($event)"></app-keyboard-component>
+
